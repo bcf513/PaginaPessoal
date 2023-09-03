@@ -1,0 +1,46 @@
+.introducao {
+  display: flex;
+  justify-content: center;
+  background-image: url("../../assets/images/fundo_introduçao.png");
+  color: var(--c2);
+}
+
+.introducao-conteudo {
+  display: flex;
+  width: var(--page-width);
+  justify-content: space-evenly;
+}
+
+.texto-introducao {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+  gap: 1.9375rem;
+}
+
+.descricao-introducao {
+  font-size: 1.25rem;
+  padding: 0;
+  margin: 0;
+  max-width: 25rem;
+}
+
+h2 {
+  margin: 0;
+}
+
+.ferramentas {
+  display: flex;
+  gap: 2rem;
+}
+
+.tag-ferramenta {
+  background-color: var(--c2);
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  padding: 0.625rem;
+  margin: 0;
+  color: var(--c12);
+}

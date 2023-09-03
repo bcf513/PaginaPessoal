@@ -1,0 +1,181 @@
+:root {
+  --c2: #e0e0e0;
+  --c12: #181818;
+  --page-width: 70vmax;
+  --container-data: 8rem;
+  --gap-data: 2.5rem;
+  --divisao: calc(var(--container-data) + var(--gap-data));
+}
+/* Exemplo de media query para dispositivos móveis */
+@media (max-width: 767px) {
+  body {
+    font-size: 8px;
+  }
+}
+
+/* Exemplo de media query para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para tablets */
+}
+
+/* Exemplo de media query para desktops */
+@media (min-width: 1024px) {
+  /* Estilos para desktops */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+#root {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+svg {
+  width: 36px;
+  height: 36px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+.experiencia-profissional {
+  background-image: url("/src/assets/images/fundo_experiencia.png");
+  color: var(--c12);
+}
+
+.experiencia-profissional svg {
+  fill: var(--c12);
+}
+
+.formacao {
+  background-image: url("/src/assets/images/fundo_formacao.png");
+  color: var(--c2);
+}
+
+.formacao svg {
+  fill: var(--c2);
+}
+
+.contato {
+  background-image: url("/src/assets/images/fundo_contato.png");
+  color: var(--c12);
+}
+
+.contato svg {
+  fill: var(--c12);
+}
+
+.divider-container {
+  padding-left: var(--divisao);
+}
+
+.divider-container hr {
+  border-top: 3px solid;
+  border: 0 3px 0 0 solid;
+  border-radius: 50px;
+  width: 100%;
+  margin: 0;
+}
+
+.secao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vmax;
+  align-self: center;
+  gap: 2.5rem;
+  padding: 2.5rem;
+}
+
+.subsecao {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: var(--page-width);
+  gap: 2.5rem;
+}
+
+.icone-e-texto {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.lista-cursos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: fit-content;
+}
+
+.nome-descricao-curso {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.curso {
+  display: flex;
+  gap: var(--gap-data);
+}
+
+.container-data {
+  display: flex;
+  min-width: var(--container-data);
+  justify-content: right;
+}
+
+.data-curso {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.nome-instituicao {
+  font-size: 1.25rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nome-curso {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.descricao {
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.lista-idiomas {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: var(--divisao);
+}
+
+.lista-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: var(--divisao);
+}
+
+.lista-contato p {
+  font-size: 1.25rem;
+  padding: 0;
+  margin: 0;
+}
