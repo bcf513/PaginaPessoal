@@ -8,14 +8,16 @@ import { FC, SVGProps } from "react";
 function IconeComTexto({
   Icone,
   texto,
+  href,
 }: {
   Icone: FC<SVGProps<SVGSVGElement>>;
   texto: string;
+  href?: string;
 }) {
   return (
     <div className="icone-e-texto">
       <Icone />
-      <p>{texto}</p>
+      <a href={href}>{texto}</a>
     </div>
   );
 }
@@ -29,9 +31,17 @@ function Contato() {
           <h2>Contato</h2>
         </div>
         <div className="lista-contato">
-          <IconeComTexto Icone={WhatsappIcon} texto="+55 41 99808-3550" />
+          <IconeComTexto
+            Icone={WhatsappIcon}
+            texto="+55 41 99808-3550"
+            href={"https://wa.me/+55041998083550"}
+          />
           <IconeComTexto Icone={EmailIcon} texto="bcf513@gmail.com" />
-          <IconeComTexto Icone={GithubIcon} texto="github.com/bcf513" />
+          <IconeComTexto
+            Icone={GithubIcon}
+            texto="github.com/bcf513"
+            href="https://github.com/bcf513"
+          />
           <IconeComTexto Icone={HomeIcon} texto="Curitiba, Paraná, Brasil" />
         </div>
       </div>
