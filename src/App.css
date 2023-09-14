@@ -1,56 +1,36 @@
 :root {
+  font-family: "Helvetica", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
   --c2: #e0e0e0;
   --c12: #181818;
-  --page-width: 70vmax;
-  --container-data: 8rem;
-  --gap-data: 2.5rem;
+  --container-data: 140px;
+  --gap-data: 20px;
   --divisao: calc(var(--container-data) + var(--gap-data));
-}
-/* Exemplo de media query para dispositivos móveis */
-@media (max-width: 767px) {
-  body {
-    font-size: 8px;
-  }
-}
-
-/* Exemplo de media query para tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Estilos para tablets */
-}
-
-/* Exemplo de media query para desktops */
-@media (min-width: 1024px) {
-  /* Estilos para desktops */
+  --margin: 70%;
+  --svg: 36px;
+  --contato-svg: var(--svg);
+  --margem-contato: var(--divisao);
+  font-size: 1.5rem;
 }
 
 body {
-  display: flex;
-  justify-content: center;
+  width: 100%;
   margin: 0;
 }
 
-#root {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-h2 {
-  font-size: 2.25rem;
-  font-style: normal;
-  font-weight: 700;
-}
-
 svg {
-  width: 36px;
-  height: 36px;
+  width: var(--svg);
+  height: var(--svg);
 }
 
-.center {
-  display: flex;
-  align-items: center;
+.background {
+  background-size: 100% 100%;
+  background-position-x: right;
+  background-repeat: no-repeat;
 }
 
 .experiencia-profissional {
-  background-image: url("/src/assets/images/fundo_experiencia.png");
+  background-image: url("/src/assets/images/Background_Experiencia_740.png");
   color: var(--c12);
 }
 
@@ -58,8 +38,12 @@ svg {
   fill: var(--c12);
 }
 
+.experiencia-profissional hr {
+  border-color: var(--c12);
+}
+
 .formacao {
-  background-image: url("/src/assets/images/fundo_formacao.png");
+  background-image: url("/src/assets/images/Background_Formacao_740.png");
   color: var(--c2);
 }
 
@@ -67,43 +51,18 @@ svg {
   fill: var(--c2);
 }
 
+.formacao hr {
+  border-color: var(--c2);
+}
+
 .contato {
-  background-image: url("/src/assets/images/fundo_contato.png");
+  background-image: url("/src/assets/images/Background_Contato_740.png");
   color: var(--c12);
+  padding: 1.5rem 0;
 }
 
 .contato svg {
   fill: var(--c12);
-}
-
-.divider-container {
-  padding-left: var(--divisao);
-}
-
-.divider-container hr {
-  border-top: 3px solid;
-  border: 0 3px 0 0 solid;
-  border-radius: 50px;
-  width: 100%;
-  margin: 0;
-}
-
-.secao {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100vmax;
-  align-self: center;
-  gap: 2.5rem;
-  padding: 2.5rem;
-}
-
-.subsecao {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  width: var(--page-width);
-  gap: 2.5rem;
 }
 
 .icone-e-texto {
@@ -112,17 +71,29 @@ svg {
   align-items: center;
 }
 
+.secao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  padding: 1.5rem 0;
+}
+
+.subsecao {
+  width: var(--margin);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.subsecao p {
+  margin: 0.5rem 0;
+}
+
 .lista-cursos {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   width: fit-content;
-}
-
-.nome-descricao-curso {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
 }
 
 .curso {
@@ -130,52 +101,68 @@ svg {
   gap: var(--gap-data);
 }
 
-.container-data {
+.nome-descricao-curso {
   display: flex;
-  min-width: var(--container-data);
-  justify-content: right;
+  flex-direction: column;
+  width: fit-content;
 }
 
 .data-curso {
   display: flex;
   align-items: center;
-  font-size: 1.25rem;
 }
 
-.nome-instituicao {
-  font-size: 1.25rem;
-  padding: 0;
-  margin: 0;
+.container-data {
+  min-width: var(--container-data);
+  display: flex;
+  justify-content: right;
 }
 
-.nome-curso {
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 0;
-  margin: 0;
-}
-
-.descricao {
-  font-size: 1.125rem;
-  margin: 0;
+.divider-container {
+  padding-left: var(--divisao);
 }
 
 .lista-idiomas {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   padding-left: var(--divisao);
 }
 
 .lista-contato {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding-left: var(--divisao);
+  padding-left: var(--margem-contato);
+  gap: 0.5rem;
 }
 
-.lista-contato p {
-  font-size: 1.25rem;
-  padding: 0;
-  margin: 0;
+.lista-contato svg {
+  width: var(--contato-svg);
+  height: var(--contato-svg);
+}
+
+@media (max-width: 1060px) {
+  :root {
+    font: 1rem;
+  }
+}
+
+@media (max-width: 740px) {
+  :root {
+    --margin: 90%;
+    --container-data: 100px;
+    font-size: 1rem;
+    --contato-svg: 30px;
+    --margem-contato: calc(
+      var(--divisao) - ((var(--contato-svg)) + var(--gap-data))
+    );
+  }
+  .experiencia-profissional {
+    background-image: url("./assets/images/Background_Experiencia_640.jpg");
+  }
+  .formacao {
+    background-image: url("./assets/images/Background_Formacao_640.jpg");
+  }
+  .contato {
+    background-image: url("./assets/images/Background_Contato_640.jpg");
+  }
 }

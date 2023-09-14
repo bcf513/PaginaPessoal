@@ -20,7 +20,9 @@ function Experiencia({
       </div>
       <div className="nome-descricao-curso">
         <p className="nome-instituicao">{empresa}</p>
-        <p className="nome-curso">{funcao}</p>
+        <p className="nome-curso">
+          <strong>{funcao}</strong>
+        </p>
         <p className="descricao">{descricao}</p>
       </div>
     </div>
@@ -31,7 +33,7 @@ function ExperienciaProfissional() {
   return (
     <div
       id="experiencia-profissional"
-      className="secao experiencia-profissional"
+      className="secao experiencia-profissional background"
     >
       <div className="subsecao">
         <div className="icone-e-texto">

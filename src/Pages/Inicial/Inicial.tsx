@@ -5,12 +5,12 @@ import Introducao from "../Introducao/Introducao";
 
 function Inicial() {
   return (
-    <div>
+    <>
       <Introducao />
       <ExperienciaProfissional />
       <Formacao />
       <Contato />
-    </div>
+    </>
   );
 }
 

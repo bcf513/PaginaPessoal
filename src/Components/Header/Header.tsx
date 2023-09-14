@@ -1,16 +1,22 @@
 import "./Header.modules.css";
+import Menu from "./Menu";
 
-function ScrollToElement({
+export function ScrollToElement({
   elementId,
   elementText,
+  menuFunction,
 }: {
   elementId: string;
   elementText: string;
+  menuFunction?: () => void | null;
 }) {
   const scrollTo = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault(); // Evita o redirecionamento padrão
     const element = document.getElementById(elementId);
     element?.scrollIntoView({ behavior: "smooth" });
+    if (menuFunction) {
+      menuFunction();
+    }
   };
 
   return (
@@ -20,12 +26,12 @@ function ScrollToElement({
   );
 }
 
-function Header() {
+export function Header() {
   return (
     <header>
       <div className="conteudo">
         <div>
-          <p className="nome">Bruno Colaço Ferreira</p>
+          <h2 className="nome">Bruno Colaço Ferreira</h2>
         </div>
         <div className="links">
           <ScrollToElement
@@ -35,9 +41,8 @@ function Header() {
           <ScrollToElement elementId="formacao" elementText="Formação" />
           <ScrollToElement elementId="contato" elementText="Contato" />
         </div>
+        <Menu />
       </div>
     </header>
   );
 }
-
-export default Header;

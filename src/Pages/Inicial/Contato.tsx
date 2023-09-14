@@ -22,7 +22,7 @@ function IconeComTexto({
 
 function Contato() {
   return (
-    <div id="contato" className="secao contato">
+    <div id="contato" className="secao contato background">
       <div className="subsecao">
         <div className="icone-e-texto">
           <PhoneIcon />

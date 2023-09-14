@@ -28,7 +28,7 @@ function Curso({ data, instituicao, cursos }: ICurso) {
 
 function Formacao() {
   return (
-    <div id="formacao" className="secao formacao">
+    <div id="formacao" className="secao formacao background">
       <div className="subsecao">
         <div className="icone-e-texto  ">
           <SchoolIcon />
@@ -81,8 +81,12 @@ function Formacao() {
           <h2>Idiomas</h2>
         </div>
         <div className="lista-idiomas">
-          <p className="nome-curso">Português - Fluente</p>
-          <p className="nome-curso">Inglês - Intermediário</p>
+          <p className="nome-curso">
+            <strong>Português - Fluente</strong>
+          </p>
+          <p className="nome-curso">
+            <strong>Inglês - Intermediário</strong>
+          </p>
         </div>
       </div>
     </div>

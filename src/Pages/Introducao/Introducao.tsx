@@ -7,7 +7,7 @@ function Tag({ ferramenta }: { ferramenta: string }) {
 
 function Introducao() {
   return (
-    <div className="introducao">
+    <div className="introducao background">
       <div className="introducao-conteudo">
         <img src={Foto} alt="" />
         <div className="texto-introducao">
