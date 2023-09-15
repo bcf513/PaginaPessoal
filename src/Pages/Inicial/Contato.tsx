@@ -17,7 +17,9 @@ function IconeComTexto({
   return (
     <div className="icone-e-texto">
       <Icone />
-      <a href={href}>{texto}</a>
+      <a className={href ? "link-contato" : ""} href={href}>
+        {texto}
+      </a>
     </div>
   );
 }

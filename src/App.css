@@ -1,4 +1,5 @@
 :root {
+  forced-color-adjust: none;
   font-family: "Helvetica", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
   --c2: #e0e0e0;
@@ -138,6 +139,10 @@ svg {
 .lista-contato svg {
   width: var(--contato-svg);
   height: var(--contato-svg);
+}
+
+.link-contato {
+  text-decoration: underline;
 }
 
 @media (max-width: 1060px) {
