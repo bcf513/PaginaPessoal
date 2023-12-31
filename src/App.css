@@ -35,11 +35,16 @@ svg {
   color: var(--c12);
 }
 
-.experiencia-profissional svg {
+.experiencia-na-area {
+  background-image: url("/src/assets/images/Background_Experiencia_Na_Area_740.jpg");
+  color: var(--c12);
+}
+
+.experiencia-profissional svg, .experiencia-na-area svg {
   fill: var(--c12);
 }
 
-.experiencia-profissional hr {
+.experiencia-profissional hr, .experiencia-na-area hr {
   border-color: var(--c12);
 }
 
@@ -111,12 +116,14 @@ svg {
 .data-curso {
   display: flex;
   align-items: center;
+  width: fit-content;
 }
 
 .container-data {
   min-width: var(--container-data);
   display: flex;
   justify-content: right;
+  width: min-content;
 }
 
 .divider-container {
@@ -163,6 +170,9 @@ svg {
   }
   .experiencia-profissional {
     background-image: url("./assets/images/Background_Experiencia_640.jpg");
+  }
+  .experiencia-na-area {
+    background-image: url("./assets/images/Background_Experiencia_Na_Area_640.jpg");
   }
   .formacao {
     background-image: url("./assets/images/Background_Formacao_640.jpg");

@@ -85,7 +85,7 @@ function Formacao() {
             <strong>Português - Fluente</strong>
           </p>
           <p className="nome-curso">
-            <strong>Inglês - Intermediário</strong>
+            <strong>Inglês - Avançado</strong>
           </p>
         </div>
       </div>
