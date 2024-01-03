@@ -31,7 +31,7 @@ svg {
 }
 
 .experiencia-profissional {
-  background-image: url("/src/assets/images/Background_Experiencia_740.png");
+  background-image: url("/src/assets/images/Background_Experiencia_Profissional_740.jpg");
   color: var(--c12);
 }
 
@@ -40,6 +40,9 @@ svg {
   color: var(--c12);
 }
 
+.experiencia-na-area a {
+  text-decoration: underline;
+}
 .experiencia-profissional svg, .experiencia-na-area svg {
   fill: var(--c12);
 }
@@ -49,7 +52,7 @@ svg {
 }
 
 .formacao {
-  background-image: url("/src/assets/images/Background_Formacao_740.png");
+  background-image: url("/src/assets/images/Background_Formacao_740.jpg");
   color: var(--c2);
 }
 
@@ -62,7 +65,7 @@ svg {
 }
 
 .contato {
-  background-image: url("/src/assets/images/Background_Contato_740.png");
+  background-image: url("/src/assets/images/Background_Contato_740.jpg");
   color: var(--c12);
   padding: 1.5rem 0;
 }
@@ -169,7 +172,7 @@ svg {
     );
   }
   .experiencia-profissional {
-    background-image: url("./assets/images/Background_Experiencia_640.jpg");
+    background-image: url("./assets/images/Background_Experiencia_Profissional_640.jpg");
   }
   .experiencia-na-area {
     background-image: url("./assets/images/Background_Experiencia_Na_Area_640.jpg");

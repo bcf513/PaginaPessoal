@@ -54,7 +54,7 @@ function ExperienciaNaArea() {
             data="Set. 2023 - Nov. 2023"
             habilidades={["Unity3D", "C#"]}
             descricao="Fiz parte de um projeto que propôs uma solução para problemas na cadeia de suprimentos da Renault; fiquei responsável por fazer um protótipo 3D com Unity, além de tomar notas de cada reunião e fazer a apresentação final, em que nossa equipe venceu contra o projeto da Universidade Positivo"
-            link="https://www.uninter.com/noticias/alunos-da-uninter-vencem-o-premio-transformation-day-renault"
+            link="www.uninter.com/noticias/alunos-da-uninter-vencem-o-premio-transformation-day-renault"
           />
           <div className="divider-container">
             <hr />
@@ -64,7 +64,7 @@ function ExperienciaNaArea() {
             data="Abril 2022"
             habilidades={["React", "Redux"]}
             descricao="Como teste para uma vaga de frontend júnior, desenvolvi um pequeno site para postagem de mensagens, que exibe uma página de erro quando usada uma URL inválida, usa proteção de rotas (caso o usuário não esteja logado), e Redux para gerenciamento dos dados"
-            link="https://codeleap-engineering-test-five.vercel.app/"
+            link="codeleap-engineering-test-five.vercel.app/"
           />
         </div>
       </div>
