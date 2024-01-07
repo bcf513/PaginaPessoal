@@ -163,7 +163,7 @@ svg {
 
 @media (max-width: 740px) {
   :root {
-    --margin: 90%;
+    --margin: 80%;
     --container-data: 100px;
     font-size: 1rem;
     --contato-svg: 30px;
