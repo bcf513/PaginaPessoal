@@ -183,4 +183,10 @@ svg {
   .contato {
     background-image: url("./assets/images/Background_Contato_640.jpg");
   }
+  .container-data {
+    min-width: unset;
+  }
+  .divider-container, .lista-idiomas {
+    padding-left: 55px;
+  }
 }
