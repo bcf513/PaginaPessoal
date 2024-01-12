@@ -1,4 +1,5 @@
 import { ReactComponent as WhatsappIcon } from "../../assets/svg/icons/whatsapp.svg";
+import { ReactComponent as LinkedinIcon } from "../../assets/svg/icons/linkedin.svg";
 import { ReactComponent as GithubIcon } from "../../assets/svg/icons/github.svg";
 import { ReactComponent as EmailIcon } from "../../assets/svg/icons/email.svg";
 import { ReactComponent as PhoneIcon } from "../../assets/svg/icons/telefone.svg";
@@ -33,6 +34,11 @@ function Contato() {
           <h2>Contato</h2>
         </div>
         <div className="lista-contato">
+          <IconeComTexto
+            Icone={LinkedinIcon}
+            texto="linkedin.com/in/bcf513/"
+            href={"https://www.linkedin.com/in/bcf513/"}
+          />
           <IconeComTexto
             Icone={WhatsappIcon}
             texto="+55 41 99808-3550"
