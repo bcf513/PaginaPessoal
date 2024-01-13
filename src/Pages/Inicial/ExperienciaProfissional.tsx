@@ -42,7 +42,7 @@ function ExperienciaProfissional() {
         </div>
         <div className="lista-cursos">
           <Experiencia
-            data="2022 - 2023"
+            data="2022 - 2024"
             funcao="Assistente Técnico em Eletrônica"
             empresa="Mastercorp do Brasil"
             descricao="Suporte remoto ao cliente, análise e conserto de impressoras térmicas"
