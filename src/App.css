@@ -42,6 +42,7 @@ svg {
 
 .experiencia-na-area a {
   text-decoration: underline;
+  word-break: break-word;
 }
 .experiencia-profissional svg, .experiencia-na-area svg {
   fill: var(--c12);
