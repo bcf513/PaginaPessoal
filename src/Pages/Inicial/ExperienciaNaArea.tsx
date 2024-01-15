@@ -61,7 +61,7 @@ function ExperienciaNaArea() {
           </div>
           <Experiencia
             projeto="Comparador de Tabelas Simples"
-            data="Junho 2022"
+            data="Jun. 2022"
             habilidades={["Python", "Tkinter"]}
             descricao="Um simples programa que fiz para ajudar a empresa em que meu pai trabalhava, que compara dados em duas planilhas de Excel, e gera uma nova com dados filtrados, utilizando a ferramenta Tkinter para criar uma simples interface"
             link="https://github.com/bcf513/ComparadorTabelasSimples"
