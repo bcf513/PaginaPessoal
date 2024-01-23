@@ -1,11 +1,11 @@
 import { ReactComponent as CodeIcon } from "../../assets/svg/icons/code.svg";
 
 type IExperiencia = {
-  projeto: string,
+  projeto: string;
   data: string;
   habilidades: string[];
   descricao: string;
-  link: string
+  link: string;
 };
 
 function Experiencia({
@@ -13,7 +13,7 @@ function Experiencia({
   data,
   habilidades,
   descricao,
-  link
+  link,
 }: IExperiencia) {
   return (
     <div className="curso">
@@ -23,15 +23,19 @@ function Experiencia({
       <div className="nome-descricao-curso">
         <strong className="nome-instituicao">{projeto}</strong>
         <div className="ferramentas">
-          {habilidades.map(habilidade => <>
-            <p className="tag-ferramenta">{habilidade}</p>
-          </>)}
+          {habilidades.map((habilidade) => (
+            <>
+              <p className="tag-ferramenta">{habilidade}</p>
+            </>
+          ))}
         </div>
         {/* <p className="nome-curso">
           <strong>{funcao}</strong>
         </p> */}
         <p className="descricao">{descricao}</p>
-        <a className="link" href={link}>{link}</a>
+        <a className="link" href={link}>
+          {link}
+        </a>
       </div>
     </div>
   );
@@ -54,7 +58,7 @@ function ExperienciaNaArea() {
             data="Set. 2023 - Nov. 2023"
             habilidades={["Unity3D", "C#"]}
             descricao="Fiz parte de um projeto que propôs uma solução para problemas na cadeia de suprimentos da Renault; fiquei responsável por fazer um protótipo 3D com Unity, além de tomar notas de cada reunião e fazer a apresentação final, em que nossa equipe venceu contra o projeto da Universidade Positivo"
-            link="www.uninter.com/noticias/alunos-da-uninter-vencem-o-premio-transformation-day-renault"
+            link="https://www.uninter.com/noticias/alunos-da-uninter-vencem-o-premio-transformation-day-renault"
           />
           <div className="divider-container">
             <hr />
@@ -74,7 +78,7 @@ function ExperienciaNaArea() {
             data="Abril 2022"
             habilidades={["React", "Redux"]}
             descricao="Como teste para uma vaga de frontend júnior, desenvolvi um pequeno site para postagem de mensagens, que exibe uma página de erro quando usada uma URL inválida, usa proteção de rotas (caso o usuário não esteja logado), e Redux para gerenciamento dos dados"
-            link="codeleap-engineering-test-five.vercel.app/"
+            link="https://codeleap-engineering-test-five.vercel.app/"
           />
         </div>
       </div>
