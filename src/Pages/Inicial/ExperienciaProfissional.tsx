@@ -45,7 +45,7 @@ function ExperienciaProfissional() {
             data="2024"
             funcao="Assessor Parlamentar (Programador)"
             empresa="Assembleia Legislativa do Paraná - Deputado Estadual Samuel Dantas"
-            descricao="Desenvolvimento de sites utilizando Python, Flask e Jinja2 no backend, e HTML, CSS e Javascript no frontend"
+            descricao="Desenvolvimento de sites utilizando Python, Flask e Jinja2 no backend, e HTML, CSS e Javascript no frontend, e MongoDB como banco de dados"
           />
           <div className="divider-container">
             <hr />
