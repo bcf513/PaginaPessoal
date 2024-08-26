@@ -13,9 +13,9 @@ function Introducao() {
         <div className="texto-introducao">
           <h2>Desenvolvedor Front End</h2>
           <p className="descricao-introducao">
-            Vivência de mais de <strong>4 anos</strong> em assistência técnica,
-            estou <strong>iniciando minha carreira</strong> no mercado de
-            desenvolvimento de software.
+            Tenho experiência de mais de <strong>4 anos</strong> em assistência técnica, 
+            <strong>mais de 7 meses</strong> como programador, 
+            e estou em busca de <strong>novas experiências</strong> na minha carreira em desenvolvimento de software.
           </p>
           <div className="ferramentas">
             <Tag ferramenta="Typescript" />
