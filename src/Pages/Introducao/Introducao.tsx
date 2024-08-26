@@ -14,7 +14,7 @@ function Introducao() {
           <h2>Desenvolvedor Front End</h2>
           <p className="descricao-introducao">
             Tenho experiência de mais de <strong>4 anos</strong> em assistência técnica, 
-            <strong>mais de 7 meses</strong> como programador, 
+            <strong>cerca de 7 meses</strong> como programador, 
             e estou em busca de <strong>novas experiências</strong> na minha carreira em desenvolvimento de software.
           </p>
           <div className="ferramentas">
