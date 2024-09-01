@@ -43,9 +43,9 @@ function ExperienciaProfissional() {
         <div className="lista-cursos">
           <Experiencia
             data="2024"
-            funcao="Assessor Parlamentar (Programador)"
-            empresa="Assembleia Legislativa do Paraná - Deputado Estadual"
-            descricao="Desenvolvimento de sites utilizando Python, Flask e Jinja2 no backend, e HTML, CSS e Javascript no frontend, e MongoDB como banco de dados"
+            funcao="Desenvolvedor Full Stack"
+            empresa="Assembleia Legislativa do Paraná - Assessor Parlamentar de Deputado Estadual"
+            descricao="Desenvolvimento de sites utilizando Python, Flask e Jinja2 no back end, e HTML, CSS e Javascript no front end, e MongoDB como banco de dados, junto de uma equipe organizando tarefas com quadro Kanban"
           />
           <div className="divider-container">
             <hr />
