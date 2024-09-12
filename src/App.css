@@ -44,11 +44,13 @@ svg {
   text-decoration: underline;
   word-break: break-word;
 }
-.experiencia-profissional svg, .experiencia-na-area svg {
+.experiencia-profissional svg,
+.experiencia-na-area svg {
   fill: var(--c12);
 }
 
-.experiencia-profissional hr, .experiencia-na-area hr {
+.experiencia-profissional hr,
+.experiencia-na-area hr {
   border-color: var(--c12);
 }
 
@@ -121,12 +123,14 @@ svg {
   display: flex;
   align-items: center;
   width: fit-content;
+  text-align: center;
 }
 
 .container-data {
   min-width: var(--container-data);
   display: flex;
-  justify-content: right;
+  flex-direction: column;
+  justify-content: center;
   width: min-content;
 }
 
@@ -187,7 +191,8 @@ svg {
   .container-data {
     min-width: unset;
   }
-  .divider-container, .lista-idiomas {
+  .divider-container,
+  .lista-idiomas {
     padding-left: 55px;
   }
 }

@@ -2,8 +2,8 @@ import ExperienciaProfissional from "../types/ExperienciaProfissional";
 
 const ExperienciasProfissionais: ExperienciaProfissional[] = [
   {
-    dataInicio: "2024",
-    dataFim: "2024",
+    dataInicio: new Date("2024-02-09"),
+    dataFim: new Date("2024-09-09"),
     funcao: "Desenvolvedor Full Stack",
     empresa:
       "Assembleia Legislativa do Paraná - Assessor Parlamentar de Deputado Estadual",
@@ -12,8 +12,8 @@ const ExperienciasProfissionais: ExperienciaProfissional[] = [
     desenvolvedor: true,
   },
   {
-    dataInicio: "2022",
-    dataFim: "2024",
+    dataInicio: new Date("2022-07-05"),
+    dataFim: new Date("2024-02-05"),
     funcao: "Assistente Técnico em Eletrônica",
     empresa: "Mastercorp do Brasil",
     descricao:
@@ -21,8 +21,8 @@ const ExperienciasProfissionais: ExperienciaProfissional[] = [
     desenvolvedor: false,
   },
   {
-    dataInicio: "2017",
-    dataFim: "2020",
+    dataInicio: new Date("2017-07-01"),
+    dataFim: new Date("2020-03-01"),
     funcao: "Assistente Técnico em Eletrônica",
     empresa: "Cel Expresso Equipamentos de Comunicação",
     descricao:

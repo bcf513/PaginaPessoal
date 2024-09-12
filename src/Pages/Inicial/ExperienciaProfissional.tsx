@@ -7,14 +7,24 @@ function Experiencia({
 }: Readonly<{ experiencia: TypeExperienciaProfissional }>) {
   const { dataInicio, dataFim, funcao, empresa, descricao } = experiencia;
 
-  function getDuracao() {
-    return dataFim ? `${dataInicio} - ${dataFim}` : dataInicio;
+  function capitalizeFirstLetter(str: string) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
+  function getDuracao(data: Date) {
+    return capitalizeFirstLetter(
+      data.toLocaleDateString("pt-BR", {
+        month: "long",
+        year: "numeric",
+      })
+    );
   }
 
   return (
     <div className="curso">
       <div className="container-data">
-        <p className="data-curso">{getDuracao()}</p>
+        <p className="data-curso">{getDuracao(dataInicio)}</p>
+        {dataFim && <p className="data-curso"> - {getDuracao(dataFim)}</p>}
       </div>
       <div className="nome-descricao-curso">
         <p className="nome-instituicao">{empresa}</p>
@@ -42,9 +52,11 @@ function ExperienciaProfissional() {
           {experienciasProfissionais.map((experiencia, index) => (
             <div key={index}>
               <Experiencia experiencia={experiencia} />
-              <div className="divider-container">
-                <hr />
-              </div>
+              {index !== experienciasProfissionais.length - 1 && (
+                <div className="divider-container">
+                  <hr />
+                </div>
+              )}
             </div>
           ))}
         </div>

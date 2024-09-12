@@ -1,6 +1,6 @@
 interface ExperienciaProfissional {
-  dataInicio: string;
-  dataFim?: string;
+  dataInicio: Date;
+  dataFim?: Date;
   funcao: string;
   empresa: string;
   descricao: string;
