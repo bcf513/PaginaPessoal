@@ -1,22 +1,20 @@
 import { ReactComponent as WorkIcon } from "../../assets/svg/icons/work.svg";
-
-type IExperienciaProfissional = {
-  data: string;
-  funcao: string;
-  empresa: string;
-  descricao: string;
-};
+import experienciasProfissionais from "../../db/ExperienciaProfissional";
+import TypeExperienciaProfissional from "../../types/ExperienciaProfissional";
 
 function Experiencia({
-  data,
-  funcao,
-  empresa,
-  descricao,
-}: IExperienciaProfissional) {
+  experiencia,
+}: Readonly<{ experiencia: TypeExperienciaProfissional }>) {
+  const { dataInicio, dataFim, funcao, empresa, descricao } = experiencia;
+
+  function getDuracao() {
+    return dataFim ? `${dataInicio} - ${dataFim}` : dataInicio;
+  }
+
   return (
     <div className="curso">
       <div className="container-data">
-        <p className="data-curso">{data}</p>
+        <p className="data-curso">{getDuracao()}</p>
       </div>
       <div className="nome-descricao-curso">
         <p className="nome-instituicao">{empresa}</p>
@@ -41,30 +39,14 @@ function ExperienciaProfissional() {
           <h2>Experiência Profissional</h2>
         </div>
         <div className="lista-cursos">
-          <Experiencia
-            data="2024"
-            funcao="Desenvolvedor Full Stack"
-            empresa="Assembleia Legislativa do Paraná - Assessor Parlamentar de Deputado Estadual"
-            descricao="Desenvolvimento de sites utilizando Python, Flask e Jinja2 no back end, e HTML, CSS e Javascript no front end, e MongoDB como banco de dados, junto de uma equipe organizando tarefas com quadro Kanban"
-          />
-          <div className="divider-container">
-            <hr />
-          </div>
-          <Experiencia
-            data="2022 - 2024"
-            funcao="Assistente Técnico em Eletrônica"
-            empresa="Mastercorp do Brasil"
-            descricao="Suporte remoto ao cliente, análise e conserto de impressoras térmicas"
-          />
-          <div className="divider-container">
-            <hr />
-          </div>
-          <Experiencia
-            data="2017 - 2020"
-            funcao="Assistente Técnico em Eletrônica"
-            empresa="Cel Expresso Equipamentos de Comunicação"
-            descricao="Análise de defeito de aparelho celular, reparo por solda SMD e BGA e testes após reparo"
-          />
+          {experienciasProfissionais.map((experiencia, index) => (
+            <div key={index}>
+              <Experiencia experiencia={experiencia} />
+              <div className="divider-container">
+                <hr />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
