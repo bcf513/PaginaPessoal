@@ -111,6 +111,7 @@ svg {
 .curso {
   display: flex;
   gap: var(--gap-data);
+  align-items: center;
 }
 
 .nome-descricao-curso {
@@ -124,6 +125,10 @@ svg {
   align-items: center;
   width: fit-content;
   text-align: center;
+}
+
+.data-curso-separator {
+  margin: 0;
 }
 
 .container-data {
@@ -170,7 +175,7 @@ svg {
 @media (max-width: 740px) {
   :root {
     --margin: 80%;
-    --container-data: 100px;
+    --container-data: 4em;
     font-size: 1rem;
     --contato-svg: 30px;
     --margem-contato: calc(
@@ -188,12 +193,5 @@ svg {
   }
   .contato {
     background-image: url("./assets/images/Background_Contato_640.jpg");
-  }
-  .container-data {
-    min-width: unset;
-  }
-  .divider-container,
-  .lista-idiomas {
-    padding-left: 55px;
   }
 }

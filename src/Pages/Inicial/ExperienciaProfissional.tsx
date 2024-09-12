@@ -36,7 +36,7 @@ function Experiencia({
         <p className="data-curso">{getDuracao(dataInicio)}</p>
         {dataFim && (
           <>
-            <p className="data-curso"> - </p>
+            <p className="data-curso data-curso-separator"> - </p>
             <p className="data-curso">{getDuracao(dataFim)}</p>
           </>
         )}
