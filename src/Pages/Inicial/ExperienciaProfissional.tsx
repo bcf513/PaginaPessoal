@@ -11,20 +11,35 @@ function Experiencia({
     return str.charAt(0).toUpperCase() + str.slice(1);
   }
 
-  function getDuracao(data: Date) {
-    return capitalizeFirstLetter(
-      data.toLocaleDateString("pt-BR", {
-        month: "long",
-        year: "numeric",
-      })
-    );
+  function getDuracao(date: Date) {
+    const diffInYears = dataFim
+      ? dataFim.getFullYear() -
+        dataInicio.getFullYear() +
+        (dataFim.getMonth() - dataInicio.getMonth()) / 12
+      : 0;
+
+    if (diffInYears < 1) {
+      return capitalizeFirstLetter(
+        date.toLocaleDateString("pt-BR", {
+          month: "long",
+          year: "numeric",
+        })
+      );
+    } else {
+      return date.getFullYear().toString();
+    }
   }
 
   return (
     <div className="curso">
       <div className="container-data">
         <p className="data-curso">{getDuracao(dataInicio)}</p>
-        {dataFim && <p className="data-curso"> - {getDuracao(dataFim)}</p>}
+        {dataFim && (
+          <>
+            <p className="data-curso"> - </p>
+            <p className="data-curso">{getDuracao(dataFim)}</p>
+          </>
+        )}
       </div>
       <div className="nome-descricao-curso">
         <p className="nome-instituicao">{empresa}</p>
@@ -66,4 +81,3 @@ function ExperienciaProfissional() {
 }
 
 export default ExperienciaProfissional;
-//<img src={WorkIcon} alt="" className="svg" />
