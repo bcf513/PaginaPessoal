@@ -1,6 +1,6 @@
 import Contato from "./Contato";
 import ExperienciaProfissional from "./ExperienciaProfissional";
-import ExperienciaNaArea from "./ExperienciaNaArea";
+import Projetos from "./Projetos";
 import Formacao from "./Formacao";
 import Introducao from "../Introducao/Introducao";
 
@@ -10,7 +10,7 @@ function Inicial() {
       <Introducao />
       <ExperienciaProfissional />
       <Formacao />
-      <ExperienciaNaArea/ >
+      <Projetos />
       <Contato />
     </>
   );
