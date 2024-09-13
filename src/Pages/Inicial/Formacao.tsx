@@ -1,18 +1,16 @@
 import { ReactComponent as LanguageIcon } from "../../assets/svg/icons/language.svg";
 import { ReactComponent as BookIcon } from "../../assets/svg/icons/book.svg";
 import { ReactComponent as SchoolIcon } from "../../assets/svg/icons/school.svg";
+import TypeCurso from "../../types/Curso";
+import cursos from "../../db/Curso";
+import { Fragment } from "react";
 
-type ICurso = {
-  data: string;
-  instituicao: string;
-  cursos: string[];
-};
-
-function Curso({ data, instituicao, cursos }: ICurso) {
+function Curso({ curso }: { curso: TypeCurso }) {
+  const { data, instituicao, cursos } = curso;
   return (
     <div className="curso">
       <div className="container-data">
-        <p className=" data-curso">{data}</p>
+        {data && <p className=" data-curso">{data}</p>}
       </div>
       <div className="nome-descricao-curso">
         <p className="nome-instituicao">{instituicao}</p>
@@ -27,6 +25,9 @@ function Curso({ data, instituicao, cursos }: ICurso) {
 }
 
 function Formacao() {
+  const cursosFormacao = cursos.filter((curso) => curso.formacao);
+  const cursosCursos = cursos.filter((curso) => !curso.formacao);
+
   return (
     <div id="formacao" className="secao formacao background">
       <div className="subsecao">
@@ -35,19 +36,19 @@ function Formacao() {
           <h2>Formação</h2>
         </div>
         <div className="lista-cursos">
-          <Curso
-            data="Prev. 2024"
-            instituicao="Uninter"
-            cursos={["Análise e Desenvolvimento de Sistemas"]}
-          />
-          <div className="divider-container">
-            <hr />
-          </div>
-          <Curso
-            data="2016"
-            instituicao="Senai"
-            cursos={["Técnico em Eletroeletrônica"]}
-          />
+          {cursosFormacao.map((curso, index) => {
+            if (curso.formacao)
+              return (
+                <Fragment key={"formacao-fragment-" + index.toString()}>
+                  <Curso key={"formacao-" + index.toString()} curso={curso} />
+                  {index !== cursosFormacao.length - 1 && (
+                    <div className="divider-container">
+                      <hr />
+                    </div>
+                  )}
+                </Fragment>
+              );
+          })}
         </div>
       </div>
       <div className="subsecao">
@@ -56,23 +57,19 @@ function Formacao() {
           <h2>Cursos</h2>
         </div>
         <div className="lista-cursos">
-          <Curso
-            data="2023"
-            instituicao="Origamid"
-            cursos={[
-              "UI Design para Iniciantes - 34h",
-              "Typescript para Iniciantes - 22h",
-              "React com Typescript - 10h",
-            ]}
-          />
-          <div className="divider-container">
-            <hr />
-          </div>
-          <Curso
-            data="2021"
-            instituicao="Danki Code"
-            cursos={["Desenvolvimento de Jogos - 87h"]}
-          />
+          {cursosCursos.map((curso, index) => {
+            if (!curso.formacao)
+              return (
+                <Fragment key={"formacao-fragment-" + index.toString()}>
+                  <Curso key={index.toString()} curso={curso} />
+                  {index !== cursosCursos.length - 1 && (
+                    <div className="divider-container">
+                      <hr />
+                    </div>
+                  )}
+                </Fragment>
+              );
+          })}
         </div>
       </div>
       <div className="subsecao">

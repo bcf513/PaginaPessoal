@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { ReactComponent as CodeIcon } from "../../assets/svg/icons/code.svg";
 
 type IExperiencia = {
@@ -23,10 +24,10 @@ function Experiencia({
       <div className="nome-descricao-curso">
         <strong className="nome-instituicao">{projeto}</strong>
         <div className="ferramentas">
-          {habilidades.map((habilidade) => (
-            <>
+          {habilidades.map((habilidade, index) => (
+            <Fragment key={"formacao-fragment-" + index.toString()}>
               <p className="tag-ferramenta">{habilidade}</p>
-            </>
+            </Fragment>
           ))}
         </div>
         {/* <p className="nome-curso">
