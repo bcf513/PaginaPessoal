@@ -2,6 +2,14 @@ import ExperienciaProfissional from "../types/ExperienciaProfissional";
 
 const ExperienciasProfissionais: ExperienciaProfissional[] = [
   {
+    dataInicio: new Date("2024-09-13"),
+    // dataFim: new Date("2025-01-09"),
+    funcao: "Desenvolvedor Full Stack",
+    empresa: "M1 Motors",
+    descricao: "Desenvolvimento de sites",
+    desenvolvedor: true,
+  },
+  {
     dataInicio: new Date("2024-02-09"),
     dataFim: new Date("2024-09-09"),
     funcao: "Desenvolvedor Full Stack",
