@@ -2,7 +2,7 @@ import Curso from "../types/Curso";
 
 const cursos: Curso[] = [
   {
-    data: "Prev. 2024",
+    data: "2024",
     instituicao: "Uninter",
     cursos: ["Análise e Desenvolvimento de Sistemas"],
     formacao: true,
