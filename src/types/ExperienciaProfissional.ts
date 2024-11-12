@@ -5,6 +5,7 @@ interface ExperienciaProfissional {
   empresa: string;
   descricao: string;
   desenvolvedor: boolean;
+  tecnologias?: string[];
 }
 
 export default ExperienciaProfissional;

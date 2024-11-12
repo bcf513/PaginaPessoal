@@ -46,6 +46,16 @@ function Experiencia({
         <p className="nome-curso">
           <strong>{funcao}</strong>
         </p>
+        {experiencia.tecnologias && (
+          <div className="ferramentas">
+            {experiencia.tecnologias.map((tecnologia, index) => (
+              <p key={index} className="tag-ferramenta">
+                {tecnologia}
+              </p>
+            ))}
+          </div>
+        )}
+
         <p className="descricao">{descricao}</p>
       </div>
     </div>

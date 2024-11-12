@@ -1,13 +1,16 @@
 import ExperienciaProfissional from "../types/ExperienciaProfissional";
 
 const ExperienciasProfissionais: ExperienciaProfissional[] = [
-  // {
-  //   dataInicio: new Date("2024-09-13"),
-  //   funcao: "Desenvolvedor Full Stack",
-  //   empresa: "M1 Motors",
-  //   descricao: "Desenvolvimento de sites",
-  //   desenvolvedor: true,
-  // },
+  {
+    dataInicio: new Date("2024-09-13"),
+    dataFim: new Date("2024-11-11"),
+    funcao: "Desenvolvedor Backend",
+    empresa: "M1 Motors",
+    descricao:
+      "Desenvolvimento de sistema para compra e venda de veículos em equipe com metodologia ágil (Kanban)",
+    desenvolvedor: true,
+    tecnologias: ["Django (Python)", "Sqlite"],
+  },
   {
     dataInicio: new Date("2024-02-09"),
     dataFim: new Date("2024-09-09"),
@@ -15,8 +18,9 @@ const ExperienciasProfissionais: ExperienciaProfissional[] = [
     empresa:
       "Assembleia Legislativa do Paraná - Assessor Parlamentar de Deputado Estadual",
     descricao:
-      "Desenvolvimento de sites utilizando Python, Flask e Jinja2 no back end, e HTML, CSS e Javascript no front end, e MongoDB como banco de dados, junto de uma equipe organizando tarefas com quadro Kanban",
+      "Desenvolvimento de sistema para organização de leads, contatos, agenda, eventos, em equipe com metodologia ágil (Kanban)",
     desenvolvedor: true,
+    tecnologias: ["Flask (Python)", "HTML", "CSS", "Javascript", "MongoDB"],
   },
   {
     dataInicio: new Date("2022-07-05"),

@@ -2,7 +2,7 @@ import Foto from "../../assets/images/Minha_Foto.png";
 import "./Introducao.modules.css";
 import experienciasProfissionais from "../../db/ExperienciaProfissional";
 
-function Tag({ ferramenta }: { ferramenta: string }) {
+function Tag({ ferramenta }: { readonly ferramenta: string }) {
   return <p className="tag-ferramenta">{ferramenta}</p>;
 }
 
@@ -60,7 +60,7 @@ function Introducao() {
       <div className="introducao-conteudo">
         <img src={Foto} alt="" />
         <div className="texto-introducao">
-          <h2>Desenvolvedor Front End</h2>
+          <h2>Desenvolvedor Full Stack</h2>
           <p className="descricao-introducao">
             Tenho experiência de mais de <strong>4 anos</strong> em assistência
             técnica,
@@ -72,6 +72,7 @@ function Introducao() {
             <Tag ferramenta="Typescript" />
             <Tag ferramenta="React" />
             <Tag ferramenta="Python" />
+            <Tag ferramenta="Git" />
           </div>
         </div>
       </div>
