@@ -2,6 +2,14 @@ import ExperienciaProfissional from "../types/ExperienciaProfissional";
 
 const ExperienciasProfissionais: ExperienciaProfissional[] = [
   {
+    dataInicio: new Date("2024-12-09"),
+    funcao: "Desenvolvedor Backend",
+    empresa: "Iceberg Security",
+    descricao:
+      "Adaptação de página principal da empresa, migração de uso de PHP para Django (Python), utilizando Kubuntu (Linux)",
+    desenvolvedor: true,
+    tecnologias: ["Django (Python)", "PostgreSQL"],
+  },  {
     dataInicio: new Date("2024-09-13"),
     dataFim: new Date("2024-11-11"),
     funcao: "Desenvolvedor Backend",
