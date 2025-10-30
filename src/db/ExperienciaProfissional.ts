@@ -3,6 +3,7 @@ import ExperienciaProfissional from "../types/ExperienciaProfissional";
 const ExperienciasProfissionais: ExperienciaProfissional[] = [
   {
     dataInicio: new Date("2024-12-09"),
+    dataFim: new Date("2025-10-03"),
     funcao: "Desenvolvedor Backend",
     empresa: "Iceberg Security",
     descricao:
