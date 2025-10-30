@@ -4,7 +4,7 @@ const ExperienciasProfissionais: ExperienciaProfissional[] = [
   {
     dataInicio: new Date("2024-12-09"),
     dataFim: new Date("2025-10-03"),
-    funcao: "Desenvolvedor Backend",
+    funcao: "Desenvolvedor Backend", 
     empresa: "Iceberg Security",
     descricao:
       "Adaptação de página principal da empresa, migração de uso de PHP para Django (Python), utilizando Kubuntu (Linux)",
