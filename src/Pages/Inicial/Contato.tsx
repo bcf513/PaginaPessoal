@@ -42,7 +42,7 @@ function Contato() {
           <IconeComTexto
             Icone={WhatsappIcon}
             texto="+55 41 99808-3550"
-            href={"https://wa.me/+55041998083550"}
+            href={"https://wa.me/5541998083550"}
           />
           <IconeComTexto Icone={EmailIcon} texto="bcf513@gmail.com" />
           <IconeComTexto

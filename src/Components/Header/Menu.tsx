@@ -36,12 +36,16 @@ function Menu() {
   }, [isOpen]);
 
   return (
-    <div className="menu">
-      <button onClick={toggleMenu}>
+    <div className="menu" ref={menuRef}>
+      <button
+        onClick={toggleMenu}
+        aria-label="Menu de navegação"
+        aria-expanded={isOpen}
+      >
         <MenuIcon />
       </button>
       {isOpen && (
-        <div className="menuOptions" ref={menuRef}>
+        <div className="menuOptions">
           <ScrollToElement
             elementId="experiencia-profissional"
             elementText="Experiência"
