@@ -39,6 +39,7 @@ export function Header() {
             elementText="Experiência"
           />
           <ScrollToElement elementId="formacao" elementText="Formação" />
+          <ScrollToElement elementId="experiencia-na-area" elementText="Projetos" />
           <ScrollToElement elementId="contato" elementText="Contato" />
         </div>
         <Menu />

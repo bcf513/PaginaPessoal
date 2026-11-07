@@ -58,7 +58,7 @@ function Menu() {
           />
           <ScrollToElement
             elementId="experiencia-na-area"
-            elementText="Experiência na Área"
+            elementText="Projetos"
             menuFunction={() => setisOpen(false)}
           />
           <ScrollToElement

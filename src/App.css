@@ -1,5 +1,4 @@
 :root {
-  forced-color-adjust: none;
   font-family: "Helvetica", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
   --c2: #e0e0e0;
@@ -11,7 +10,7 @@
   --svg: 36px;
   --contato-svg: var(--svg);
   --margem-contato: var(--divisao);
-  font-size: 1.5rem;
+  font-size: clamp(1rem, calc(0.5rem + 1.08vw), 1.5rem);
 }
 
 body {
@@ -166,21 +165,48 @@ svg {
   text-decoration: underline;
 }
 
-@media (max-width: 1060px) {
-  :root {
-    font: 1rem;
-  }
-}
-
 @media (max-width: 740px) {
   :root {
     --margin: 80%;
     --container-data: 4em;
     font-size: 1rem;
     --contato-svg: 30px;
-    --margem-contato: calc(
-      var(--divisao) - ((var(--contato-svg)) + var(--gap-data))
-    );
+    --margem-contato: 0px;
+  }
+  .curso {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+  .container-data {
+    min-width: 0;
+    width: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+  .container-data:empty {
+    display: none;
+  }
+  .lista-cursos,
+  .nome-descricao-curso {
+    width: 100%;
+    min-width: 0;
+  }
+  .divider-container,
+  .lista-idiomas {
+    padding-left: 0;
+  }
+  .lista-contato .icone-e-texto {
+    gap: 0.75rem;
+  }
+  .lista-contato svg {
+    flex-shrink: 0;
+  }
+  .lista-contato a {
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
   .experiencia-profissional {
     background-image: url("./assets/images/Background_Experiencia_Profissional_640.jpg");
