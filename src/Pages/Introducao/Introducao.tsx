@@ -9,7 +9,7 @@ function Tag({ ferramenta }: { readonly ferramenta: string }) {
 function Introducao() {
   function calcularTempoDeExperiencia() {
     const experienciasProfissionaisNaArea = experienciasProfissionais.filter(
-      (experiencia) => experiencia.desenvolvedor
+      (experiencia) => experiencia.desenvolvedor,
     );
 
     const dataAtual = new Date();
@@ -70,6 +70,7 @@ function Introducao() {
           </p>
           <div className="ferramentas">
             <Tag ferramenta="Typescript" />
+            <Tag ferramenta="Next.js" />
             <Tag ferramenta="React" />
             <Tag ferramenta="Python" />
             <Tag ferramenta="Git" />

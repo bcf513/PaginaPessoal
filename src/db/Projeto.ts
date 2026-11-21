@@ -2,6 +2,14 @@ import Projeto from "../types/Projeto";
 
 const projetos: Projeto[] = [
   {
+    dataInicio: "Setembro de 2026",
+    projeto: "Gralharia - Co-fundador e Desenvolvedor",
+    habilidades: ["Next.js", "C#"],
+    descricao:
+      "Plataforma voltada à artistas visuais, que inclui CRM, agenda, estoque, controle de negociações por etapas e catálogo de artes.",
+    link: "https://gralharia.com.br/",
+  },
+  {
     dataInicio: "Setembro de 2023",
     dataFim: "Novembro de 2023",
     projeto: "Renault Transformation Day - Desafio Supply Chain",
