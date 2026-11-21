@@ -4,7 +4,7 @@ const projetos: Projeto[] = [
   {
     dataInicio: "Setembro de 2026",
     projeto: "Gralharia - Cofundador e Desenvolvedor",
-    habilidades: ["Next.js", "C#"],
+    habilidades: ["Next.js"],
     descricao:
       "Plataforma voltada à artistas visuais, que inclui CRM, agenda, estoque, controle de negociações por etapas e catálogo de artes.",
     link: "https://gralharia.com.br/",
