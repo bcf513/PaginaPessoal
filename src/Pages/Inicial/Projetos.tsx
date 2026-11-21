@@ -8,11 +8,15 @@ function Projeto({ projeto }: { projeto: TypeProjeto }) {
   return (
     <div className="curso">
       <div className="container-data">
-        {dataInicio && dataFim && (
+        {dataInicio && (
           <>
             <p className="data-curso">{dataInicio}</p>
-            <p className="data-curso data-curso-separator"> - </p>
-            <p className="data-curso">{dataFim}</p>
+            {dataFim && (
+              <>
+                <p className="data-curso data-curso-separator"> - </p>
+                <p className="data-curso">{dataFim}</p>
+              </>
+            )}
           </>
         )}
       </div>

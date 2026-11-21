@@ -3,7 +3,7 @@ import Projeto from "../types/Projeto";
 const projetos: Projeto[] = [
   {
     dataInicio: "Setembro de 2026",
-    projeto: "Gralharia - Co-fundador e Desenvolvedor",
+    projeto: "Gralharia - Cofundador e Desenvolvedor",
     habilidades: ["Next.js", "C#"],
     descricao:
       "Plataforma voltada à artistas visuais, que inclui CRM, agenda, estoque, controle de negociações por etapas e catálogo de artes.",
