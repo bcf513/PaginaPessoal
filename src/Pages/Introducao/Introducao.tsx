@@ -58,7 +58,9 @@ function Introducao() {
   return (
     <div className="introducao background">
       <div className="introducao-conteudo">
-        <img src={Foto} alt="" />
+        <div className="container-foto">
+          <img src={Foto} alt="" />
+        </div>
         <div className="texto-introducao">
           <h2>Desenvolvedor Full Stack</h2>
           <p className="descricao-introducao">

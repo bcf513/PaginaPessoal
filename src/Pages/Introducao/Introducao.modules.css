@@ -5,9 +5,29 @@
   color: var(--c2);
 }
 
-.introducao img {
+.container-foto {
+  position: relative;
   width: 50%;
+  flex-shrink: 0;
+}
+
+.container-foto img {
+  width: 100%;
+  height: auto;
   object-fit: cover;
+  display: block;
+}
+
+.container-foto::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 70%,
+    rgba(24, 24, 24, 1) 100%
+  );
+  pointer-events: none;
 }
 
 .introducao-conteudo {
@@ -54,7 +74,10 @@
     width: 100%;
     font-size: 1em;
   }
-  .introducao-conteudo img {
+  .container-foto {
+    width: 100%;
+  }
+  .container-foto img {
     width: 100%;
   }
   .texto-introducao {
