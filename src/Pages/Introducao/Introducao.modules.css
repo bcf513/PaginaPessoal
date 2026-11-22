@@ -15,6 +15,7 @@
   display: flex;
   justify-content: space-evenly;
   position: relative;
+  font-size: 0.825em;
 }
 
 .texto-introducao {
@@ -51,6 +52,7 @@
   .introducao-conteudo {
     flex-direction: column;
     width: 100%;
+    font-size: 1em;
   }
   .introducao-conteudo img {
     width: 100%;

@@ -62,11 +62,14 @@ function Introducao() {
         <div className="texto-introducao">
           <h2>Desenvolvedor Full Stack</h2>
           <p className="descricao-introducao">
-            Tenho experiência de mais de <strong>4 anos</strong> em assistência
-            técnica,
-            <strong> cerca de {calcularTempoDeExperiencia()}</strong> como
-            programador, e estou em busca de <strong>novas experiências</strong>{" "}
-            na minha carreira em desenvolvimento de software.
+            Cerca de <strong>{calcularTempoDeExperiencia()}</strong> de
+            experiência profissional em desenvolvimento de software e mais de{" "}
+            <strong>4 anos</strong> de experiência em assistência técnica em
+            eletrônica. Experiência no desenvolvimento de aplicações web,
+            sistemas de gerenciamento, integração com bancos de dados e trabalho
+            em equipes utilizando metodologias ágeis. Busco{" "}
+            <strong>novas oportunidades</strong> para ampliar minha experiência
+            e contribuir com o desenvolvimento de soluções tecnológicas.
           </p>
           <div className="ferramentas">
             <Tag ferramenta="Typescript" />

@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { ReactComponent as CodeIcon } from "../../assets/svg/icons/code.svg";
 import TypeProjeto from "../../types/Projeto";
 import projetos from "../../db/Projeto";
+import Descricao from "../../Components/Descricao/Descricao";
 
 function Projeto({ projeto }: { projeto: TypeProjeto }) {
   const { dataInicio, dataFim, habilidades, descricao, link } = projeto;
@@ -29,7 +30,7 @@ function Projeto({ projeto }: { projeto: TypeProjeto }) {
             </Fragment>
           ))}
         </div>
-        <p className="descricao">{descricao}</p>
+        <Descricao texto={descricao} />
         <a className="link" href={link}>
           {link}
         </a>

@@ -1,6 +1,7 @@
 import { ReactComponent as WorkIcon } from "../../assets/svg/icons/work.svg";
 import experienciasProfissionais from "../../db/ExperienciaProfissional";
 import TypeExperienciaProfissional from "../../types/ExperienciaProfissional";
+import Descricao from "../../Components/Descricao/Descricao";
 
 function Experiencia({
   experiencia,
@@ -56,7 +57,7 @@ function Experiencia({
           </div>
         )}
 
-        <p className="descricao">{descricao}</p>
+        <Descricao texto={descricao} />
       </div>
     </div>
   );

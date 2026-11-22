@@ -1,6 +1,6 @@
 :root {
-  font-family: "Helvetica", "Franklin Gothic Medium", "Arial Narrow", Arial,
-    sans-serif;
+  font-family:
+    "Helvetica", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   --c2: #e0e0e0;
   --c12: #181818;
   --container-data: 140px;
@@ -117,6 +117,46 @@ svg {
   display: flex;
   flex-direction: column;
   width: fit-content;
+}
+
+.descricao-container {
+  width: 100%;
+}
+
+.descricao-paragrafo {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.descricao-lista {
+  margin: 0.25rem 0 0.5rem 0;
+  padding-left: 1.25rem;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+.descricao-lista li {
+  margin-bottom: 0.35rem;
+  line-height: 1.4;
+}
+
+.descricao-lista li:last-child {
+  margin-bottom: 0;
+}
+
+.descricao-sublista {
+  margin: 0.25rem 0 0 0;
+  padding-left: 1.25rem;
+  list-style-type: circle;
+  list-style-position: outside;
+}
+
+.descricao-sublista li {
+  margin-bottom: 0.25rem;
+}
+
+.descricao {
+  white-space: pre-line;
 }
 
 .data-curso {
